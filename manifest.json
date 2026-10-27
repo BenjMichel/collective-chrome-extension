@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Collective – Offres déjà vues",
+  "version": "1.0.0",
+  "description": "Signale les offres déjà consultées sur app.collective.work.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://app.collective.work/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
